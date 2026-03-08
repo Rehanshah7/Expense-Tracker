@@ -11,5 +11,14 @@
     },
     "APP": {
         "HEALTH_OK": "Server is healthy and running"
+    },
+    "CATEGORY": {
+        "CATEGORY_CREATED": "Category created successfully",
+        "CATEGORY_UPDATED": "Category updated successfully",
+        "CATEGORY_DELETED": "Category deleted successfully",
+        "CATEGORIES_FETCHED": "Categories fetched successfully",
+        "CATEGORY_NOT_FOUND": "Category not found",
+        "CATEGORY_ALREADY_EXISTS": "Category already exists",
+        "CATEGORY_IN_USE": "Category is in use and cannot be deleted"
     }
 }
