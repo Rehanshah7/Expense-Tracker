@@ -2,6 +2,7 @@ import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import { OAuth2Client } from 'google-auth-library';
 import { User, IUser } from '../models/user.model';
+import { createDefaultCategoriesForUser } from './category.services';
 
 const googleClient = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 
@@ -31,6 +32,8 @@ export const registerUser = async (data: Partial<IUser>) => {
     password: hashedPassword,
     provider: 'local',
   });
+
+  await createDefaultCategoriesForUser(user.id);
 
   const token = generateToken(user.id);
   return { user, token };
@@ -83,6 +86,8 @@ export const googleLogin = async (idToken: string) => {
       provider: 'google',
       isVerified: true,
     });
+
+    await createDefaultCategoriesForUser(user.id);
   } else if (user.provider !== 'google') {
     // User exists with local provider, but tries to login with google
   }

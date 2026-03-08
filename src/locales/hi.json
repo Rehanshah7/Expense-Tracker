@@ -11,5 +11,14 @@
     },
     "APP": {
         "HEALTH_OK": "सर्वर स्वस्थ है और चल रहा है"
+    },
+    "CATEGORY": {
+        "CATEGORY_CREATED": "श्रेणी सफलतापूर्वक बनाई गई",
+        "CATEGORY_UPDATED": "श्रेणी सफलतापूर्वक अपडेट की गई",
+        "CATEGORY_DELETED": "श्रेणी सफलतापूर्वक हटा दी गई",
+        "CATEGORIES_FETCHED": "श्रेणियाँ सफलतापूर्वक प्राप्त की गईं",
+        "CATEGORY_NOT_FOUND": "श्रेणी नहीं मिली",
+        "CATEGORY_ALREADY_EXISTS": "श्रेणी पहले से मौजूद है",
+        "CATEGORY_IN_USE": "श्रेणी उपयोग में है और इसे हटाया नहीं जा सकता"
     }
 }
