@@ -29,5 +29,24 @@
         "TRANSACTION_NOT_FOUND": "Transaction not found",
         "INVALID_TRANSACTION_TYPE": "Invalid transaction type",
         "INVALID_PAYMENT_METHOD": "Invalid payment method"
+    },
+    "DASHBOARD": {
+        "DASHBOARD_DATA_FETCHED": "Dashboard summary fetched successfully",
+        "MONTHLY_SUMMARY_FETCHED": "Monthly summary fetched successfully",
+        "CATEGORY_SUMMARY_FETCHED": "Category summary fetched successfully",
+        "RECENT_TRANSACTIONS_FETCHED": "Recent transactions fetched successfully"
+    },
+    "BUDGET": {
+        "BUDGET_SET_SUCCESS": "Budget set successfully",
+        "BUDGET_FETCHED": "Budgets fetched successfully"
+    },
+    "NOTIFICATION": {
+        "NOTIFICATIONS_FETCHED": "Notifications fetched successfully",
+        "NOTIFICATION_READ": "Notification marked as read",
+        "NOTIFICATION_NOT_FOUND": "Notification not found"
+    },
+    "REPORT": {
+        "BUDGET_VS_EXPENSE_FETCHED": "Budget vs Expense report fetched successfully",
+        "CATEGORY_TREND_FETCHED": "Category trend report fetched successfully"
     }
 }

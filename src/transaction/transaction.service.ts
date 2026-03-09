@@ -9,6 +9,7 @@ import {
     TransactionFilters
 } from './transaction.repository';
 import { Category } from '../models/category.model';
+import { checkBudgetThresholds } from '../budget/budget.checker';
 
 export const createTransactionService = async (payload: CreateTransactionPayload) => {
     // Validate category ownership
@@ -27,7 +28,14 @@ export const createTransactionService = async (payload: CreateTransactionPayload
         throw new Error('INVALID_TRANSACTION_TYPE');
     }
 
-    return await createTransactionRepository(payload);
+    const transaction = await createTransactionRepository(payload);
+
+    // After successfully saving, trigger budget checks asynchronously
+    if (transaction.type === 'expense') {
+        checkBudgetThresholds(payload.userId, payload.date).catch(err => console.error("Budget check error:", err));
+    }
+
+    return transaction;
 };
 
 export const getTransactionsService = async (filters: TransactionFilters) => {
@@ -73,6 +81,10 @@ export const updateTransactionService = async (id: string, userId: string, updat
 
     if (!transaction) {
         throw new Error('TRANSACTION_NOT_FOUND'); // Ensure they don't update someone else's
+    }
+
+    if (transaction.type === 'expense') {
+         checkBudgetThresholds(userId, transaction.date).catch(err => console.error("Budget update error:", err));
     }
 
     return transaction;

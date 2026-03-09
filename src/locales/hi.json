@@ -29,5 +29,24 @@
         "TRANSACTION_NOT_FOUND": "लेनदेन नहीं मिला",
         "INVALID_TRANSACTION_TYPE": "अमान्य लेनदेन प्रकार",
         "INVALID_PAYMENT_METHOD": "अमान्य भुगतान विधि"
+    },
+    "DASHBOARD": {
+        "DASHBOARD_DATA_FETCHED": "डैशबोर्ड सारांश सफलतापूर्वक प्राप्त किया गया",
+        "MONTHLY_SUMMARY_FETCHED": "मासिक सारांश सफलतापूर्वक प्राप्त किया गया",
+        "CATEGORY_SUMMARY_FETCHED": "श्रेणी सारांश सफलतापूर्वक प्राप्त किया गया",
+        "RECENT_TRANSACTIONS_FETCHED": "हाल के लेनदेन सफलतापूर्वक प्राप्त किए गए"
+    },
+    "BUDGET": {
+        "BUDGET_SET_SUCCESS": "बजट सफलतापूर्वक सेट किया गया",
+        "BUDGET_FETCHED": "बजट सफलतापूर्वक प्राप्त किए गए"
+    },
+    "NOTIFICATION": {
+        "NOTIFICATIONS_FETCHED": "सूचनाएं सफलतापूर्वक प्राप्त की गईं",
+        "NOTIFICATION_READ": "सूचना को पढ़ा हुआ चिह्नित किया गया",
+        "NOTIFICATION_NOT_FOUND": "सूचना नहीं मिली"
+    },
+    "REPORT": {
+        "BUDGET_VS_EXPENSE_FETCHED": "बजट बनाम व्यय रिपोर्ट सफलतापूर्वक प्राप्त की गई",
+        "CATEGORY_TREND_FETCHED": "श्रेणी प्रवृत्ति रिपोर्ट सफलतापूर्वक प्राप्त की गई"
     }
 }
