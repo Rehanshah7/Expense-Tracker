@@ -20,5 +20,14 @@
         "CATEGORY_NOT_FOUND": "श्रेणी नहीं मिली",
         "CATEGORY_ALREADY_EXISTS": "श्रेणी पहले से मौजूद है",
         "CATEGORY_IN_USE": "श्रेणी उपयोग में है और इसे हटाया नहीं जा सकता"
+    },
+    "TRANSACTION": {
+        "TRANSACTION_CREATED": "लेनदेन सफलतापूर्वक बनाया गया",
+        "TRANSACTION_UPDATED": "लेनदेन सफलतापूर्वक अपडेट किया गया",
+        "TRANSACTION_DELETED": "लेनदेन सफलतापूर्वक हटा दिया गया",
+        "TRANSACTION_FETCHED": "लेनदेन सफलतापूर्वक प्राप्त किए गए",
+        "TRANSACTION_NOT_FOUND": "लेनदेन नहीं मिला",
+        "INVALID_TRANSACTION_TYPE": "अमान्य लेनदेन प्रकार",
+        "INVALID_PAYMENT_METHOD": "अमान्य भुगतान विधि"
     }
 }
