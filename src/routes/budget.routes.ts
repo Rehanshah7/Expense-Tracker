@@ -2,11 +2,11 @@ import { Router } from 'express';
 import {
     setBudget,
     getBudgets
-} from './budget.controller';
+} from '../controllers/budget.controller';
 import {
     validateSetBudget,
     validateGetBudgets
-} from './budget.validator';
+} from '../validators/budget.validator';
 import { authMiddleware } from '../middlewares/auth.middleware';
 
 const router = Router();

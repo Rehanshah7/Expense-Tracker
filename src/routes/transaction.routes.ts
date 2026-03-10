@@ -5,12 +5,12 @@ import {
     getTransactionById,
     updateTransaction,
     deleteTransaction
-} from './transaction.controller';
+} from '../controllers/transaction.controller';
 import {
     validateCreateTransaction,
     validateUpdateTransaction,
     validateTransactionFilters
-} from './transaction.validator';
+} from '../validators/transaction.validator';
 import { authMiddleware } from '../middlewares/auth.middleware';
 
 const router = Router();

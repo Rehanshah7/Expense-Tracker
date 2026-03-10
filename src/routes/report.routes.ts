@@ -2,7 +2,7 @@ import { Router } from 'express';
 import {
     getBudgetVsExpenseReport,
     getCategoryTrendReport
-} from './report.controller';
+} from '../controllers/report.controller';
 import { authMiddleware } from '../middlewares/auth.middleware';
 
 const router = Router();

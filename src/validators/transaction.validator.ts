@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import { apiError } from '../utils/apiResponse';
-import { TransactionType, PaymentMethod } from './transaction.model';
+import { TransactionType, PaymentMethod } from '../models/transaction.model';
 
 export const validateCreateTransaction = (req: Request, res: Response, next: NextFunction) => {
     const { amount, type, categoryId, date, paymentMethod } = req.body;

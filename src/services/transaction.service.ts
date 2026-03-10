@@ -7,9 +7,9 @@ import {
     CreateTransactionPayload,
     UpdateTransactionPayload,
     TransactionFilters
-} from './transaction.repository';
+} from '../repository/transaction.repository';
 import { Category } from '../models/category.model';
-import { checkBudgetThresholds } from '../budget/budget.checker';
+import { checkBudgetThresholds } from '../utils/budget.checker';
 
 export const createTransactionService = async (payload: CreateTransactionPayload) => {
     // Validate category ownership

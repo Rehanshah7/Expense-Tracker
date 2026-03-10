@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import { Transaction } from '../transaction/transaction.model';
+import { Transaction } from '../models/transaction.model';
 
 export const getDashboardSummaryService = async (userId: string) => {
     const objectId = new mongoose.Types.ObjectId(userId);

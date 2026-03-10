@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
-import { Transaction } from '../transaction/transaction.model';
-import { getBudgetsWithProgressService } from '../budget/budget.service';
+import { Transaction } from '../models/transaction.model';
+import { getBudgetsWithProgressService } from '../services/budget.service';
 
 export const getBudgetVsExpenseReportService = async (userId: string, month: string) => {
     // This is essentially getting the budget progress overview which we already built!

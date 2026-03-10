@@ -5,7 +5,7 @@ import {
     getTransactionByIdService,
     updateTransactionService,
     deleteTransactionService
-} from './transaction.service';
+} from '../services/transaction.service';
 import { apiSuccess, apiError } from '../utils/apiResponse';
 import { t } from '../utils/i18n';
 

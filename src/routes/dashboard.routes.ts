@@ -4,7 +4,7 @@ import {
     getMonthlySummary,
     getCategorySummary,
     getRecentTransactions
-} from './dashboard.controller';
+} from '../controllers/dashboard.controller';
 import { authMiddleware } from '../middlewares/auth.middleware';
 
 const router = Router();

@@ -1,4 +1,4 @@
-import { Notification, INotification, NotificationType } from './notification.model';
+import { Notification, INotification, NotificationType } from '../models/notification.model';
 
 export interface CreateNotificationPayload {
     userId: string;
