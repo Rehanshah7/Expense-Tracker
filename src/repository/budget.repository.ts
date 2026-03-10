@@ -1,4 +1,4 @@
-import { Budget, IBudget } from './budget.model';
+import { Budget, IBudget } from '../models/budget.model';
 
 export interface CreateBudgetPayload {
     userId: string;

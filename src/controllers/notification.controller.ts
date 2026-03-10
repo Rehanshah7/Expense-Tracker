@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 import {
     getNotificationsService,
     markNotificationAsReadService
-} from './notification.service';
+} from '../services/notification.service';
 import { apiSuccess, apiError } from '../utils/apiResponse';
 import { t } from '../utils/i18n';
 

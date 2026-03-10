@@ -1,4 +1,4 @@
-import { Transaction, ITransaction, TransactionType, PaymentMethod } from './transaction.model';
+import { Transaction, ITransaction, TransactionType, PaymentMethod } from '../models/transaction.model';
 import mongoose from 'mongoose';
 
 export interface CreateTransactionPayload {

@@ -1,6 +1,6 @@
-import { setBudgetRepository, getBudgetsRepository, CreateBudgetPayload } from './budget.repository';
+import { setBudgetRepository, getBudgetsRepository, CreateBudgetPayload } from '../repository/budget.repository';
 import { Category } from '../models/category.model';
-import { Transaction } from '../transaction/transaction.model';
+import { Transaction } from '../models/transaction.model';
 import mongoose from 'mongoose';
 
 export const setBudgetService = async (payload: CreateBudgetPayload) => {

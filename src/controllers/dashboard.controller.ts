@@ -4,7 +4,7 @@ import {
     getMonthlySummaryService,
     getCategorySummaryService,
     getRecentTransactionsService
-} from './dashboard.service';
+} from '../services/dashboard.service';
 import { apiSuccess, apiError } from '../utils/apiResponse';
 import { t } from '../utils/i18n';
 

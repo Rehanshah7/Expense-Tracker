@@ -2,7 +2,7 @@ import { Router } from 'express';
 import {
     getNotifications,
     markAsRead
-} from './notification.controller';
+} from '../controllers/notification.controller';
 import { authMiddleware } from '../middlewares/auth.middleware';
 
 const router = Router();

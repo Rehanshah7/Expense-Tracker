@@ -1,6 +1,6 @@
-import { getBudgetsWithProgressService } from './budget.service';
-import { createNotificationService } from '../notification/notification.service';
-import { NotificationType, Notification } from '../notification/notification.model';
+import { getBudgetsWithProgressService } from '../services/budget.service';
+import { createNotificationService } from '../services/notification.service';
+import { NotificationType, Notification } from '../models/notification.model';
 
 export const checkBudgetThresholds = async (userId: string, date: Date) => {
     const month = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;

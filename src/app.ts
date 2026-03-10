@@ -3,11 +3,11 @@ import cors from "cors";
 import authRoutes from "./routes/auth.routes";
 import healthRoutes from "./routes/health.routes";
 import categoryRoutes from "./routes/category.routes";
-import transactionRoutes from "./transaction/transaction.routes";
-import dashboardRoutes from "./dashboard/dashboard.routes";
-import budgetRoutes from "./budget/budget.routes";
-import notificationRoutes from "./notification/notification.routes";
-import reportRoutes from "./report/report.routes";
+import transactionRoutes from "./routes/transaction.routes";
+import dashboardRoutes from "./routes/dashboard.routes";
+import budgetRoutes from "./routes/budget.routes";
+import notificationRoutes from "./routes/notification.routes";
+import reportRoutes from "./routes/report.routes";
 import { languageMiddleware } from "./middlewares/language.middleware";
 
 const app = express();
